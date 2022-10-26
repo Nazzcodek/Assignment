@@ -1,0 +1,279 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Century Gothic",Verdana,sans-serif;
+}
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: #e7eaf6;
+
+}
+
+.logo {
+    font-size: 45px;
+    margin-left: 50px;
+    color: white;
+}
+
+.toggle {
+	font-size: 30px;
+	color: dimgrey;
+	float: left;
+	line-height: 70px;
+	margin-left: 5%;
+	cursor: pointer;
+	display: none;
+}
+/*nav bar css*/
+nav {
+	background-color: #222831;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+nav ul {
+	float: left;
+	margin-left: 20%;
+}
+.social {
+	float: left;
+	margin-left: 20%;
+}
+
+.nav ul li {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: inline-block;
+}
+
+.menu li a {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 70px;
+	color: #fcfefe;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px;
+}
+.menu li a:active{
+	background-color: slategrey;
+}
+
+.menu li:hover {
+	background-color:slategrey;
+}
+.top-social {
+	padding: 14px 15px;
+}
+.top-social a {
+	padding: 13px;
+	color: slategrey;
+}
+.top-social a:hover{
+	color: #fcfefe;
+}
+
+@media screen and (max-width:  1052px) {
+	.toggle{
+		display: block;
+	}
+
+	nav ul{
+		position:fixed;
+		top: -400px;
+		z-index: -1;
+		margin-top: -15px;
+		right: 0;
+		left: 0;
+		width: 200px;
+		background-color: white;
+		display:inline-block ;
+		transition: top .4s;
+		margin-top: 0;
+	}
+}
+/*hero section css*/
+main {
+	margin-top: 70px;
+	 width: 100vw;
+    height: 100vh;
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Text styles */
+    text-align: center;
+    color: white; 
+    background-image: url("/images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/bg.jpg");
+
+
+}
+
+h1 {
+	font-size: 75px;
+}
+
+#home p, #about p {
+	font-size: 22px;
+	line-height: 200%;
+}
+#intro a {
+	color: slategrey;
+}
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+#servicesIcon {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover #servicesIcon {
+    color: slategrey;
+}
+.servicesText:hover {
+    border: 1px solid slategrey;
+}
+
+.footer-clean {
+  padding:50px 0;
+  background-color:#222831;;
+  color:whitesmoke;
+  margin-top: 20px;
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:right;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+
+#item {
+	text-align: center;
+}
+
+#footer-icon {
+	padding: 14px 15px;
+}
+#footer-icon a {
+	padding: 13px;
+	color: slategrey;
+}
+#footer-icon a:hover{
+	color: #fcfefe;
+}
+.container a{
+	text-decoration: none;
+	color: whitesmoke;
+}
+.container a:hover {
+	color: slategrey;
+}
+
+.foot{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
