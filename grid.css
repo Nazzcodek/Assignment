@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca:wght@400');
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display:wght@700');
+
+
+* {
+
+    font-family: 'Big Shoulders Display', 'Lexend Deca', sans-serif;
+}
+body {
+	box-sizing: border-box;
+	justify-content: center;
+
+}
+.grid {
+	background-color: black;
+	color: hsl(0, 0%, 100%, 0.75);
+	width: 150px;
+	border: 1px solid white;
+	border-radius: 10px;
+	font-size: 20px;
+	
+
+}
+.grid:hover, .grid:active{
+	background-color: dimgrey;
+
+}
+.grid-item1 { 
+	grid-area: first1;
+	background-color: #f16821;
+}
+.grid-item2 { 
+	grid-area: second2;
+	background-color: #fac70b; 
+}
+.grid-item3 {
+ grid-area: third3; 
+ background-color: #068b78;
+}
+.grid-item4 { 
+	grid-area: fourth4; 
+	background-color: #00bbf0;
+}
+.grid-item5 { 
+	grid-area: fifth5; 
+	background-color: #00bbf0;
+}
+
+.box {
+	max-width: 1400px;
+	background-color: black;
+	margin: auto;
+
+}
+.grid-container {
+	display: grid;
+	grid-gap: 15px;
+	background-color: black;
+	grid-template-areas:
+    'first1 first1 first1 first1 second2 second2'
+    'first1 first1 first1 first1 second2 second2'
+    'third3 third3 third3 fourth4 fourth4 fourth4'
+    'third3 third3 third3 fifth5 fifth5 fifth5';
+  	padding: 10px;
+  	margin: 50px;
+  	height: 600px;
+}
+.grid-container > div {
+  padding: 20px 0;
+}
